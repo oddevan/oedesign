@@ -8,3 +8,17 @@ a.navbar-brand, h1, h2, h3, h4 {
 	font-family: Raleway;
 	font-weight: 300;
 }
+
+h1, h4 {
+	background: url(box-plain.svg);
+	background-size: 7px 7px;
+	background-repeat: repeat-x;
+	background-position-y: center;
+	text-align: center;
+	
+	span {
+		background: white;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
