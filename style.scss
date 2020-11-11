@@ -9,24 +9,49 @@ a.navbar-brand, h1, h2, h3, h4 {
 	font-weight: 300;
 }
 
-h1, h4 {
+h1, h2, h3, h4 {
 	background: url(box-plain.svg);
-	background-size: 7px 7px;
+	background-size: 3px 3px;
 	background-repeat: repeat-x;
 	background-position-y: center;
 	text-align: center;
+	margin-bottom: $grid-gutter-width;
 	
 	span {
 		background: white;
-		padding-left: 15px;
-		padding-right: 15px;
+		padding-left: $grid-gutter-width / 2;
+		padding-right: $grid-gutter-width / 2;
 	}
 }
 
 .hero {
 	background: #9cf;
 	
-	h1 span {
-		background: #9cf;
+	h1{
+		margin-bottom: 0;
+		
+		span {
+			background: #9cf;
+		}
+	}
+}
+
+.row.projects .card {
+	margin-bottom: $grid-gutter-width;
+}
+
+.footer .divider {
+	background: url(box-plain.svg);
+	background-size: 3px 3px;
+	background-repeat: repeat-x;
+	background-position-y: center;
+	text-align: center;
+	margin-bottom: $grid-gutter-width;
+	
+	img {
+		width: (50 + $grid-gutter-width);
+		height: (50 + $grid-gutter-width);
+		border: ($grid-gutter-width / 2) solid white;
+		background: white;
 	}
 }
