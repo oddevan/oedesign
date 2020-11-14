@@ -16,6 +16,11 @@ a.navbar-brand, h1, h2, h3, h4 {
 
 a.navbar-brand {
 	text-decoration: none;
+	color: $primary;
+
+	svg {
+		fill: $primary;
+	}
 }
 
 h1, h2, h3, h4 {
@@ -76,10 +81,11 @@ h1, h2, h3, h4 {
 	text-align: center;
 	margin-bottom: $grid-gutter-width;
 	
-	img {
+	svg {
 		width: (50 + $grid-gutter-width);
 		height: (50 + $grid-gutter-width);
 		border: ($grid-gutter-width / 2) solid white;
 		background: white;
+		fill: $primary;
 	}
 }
