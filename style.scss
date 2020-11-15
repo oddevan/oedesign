@@ -9,11 +9,6 @@ $link-hover-decoration: none;
 @import 'bootstrap.scss';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
-a.navbar-brand, h1, h2, h3, h4 {
-	font-family: Raleway;
-	font-weight: 300;
-}
-
 a.navbar-brand {
 	text-decoration: none;
 	color: $primary;
@@ -23,38 +18,17 @@ a.navbar-brand {
 	}
 }
 
-h1, h2, h3, h4 {
-/* 
-	background: url(box-plain.svg);
-	background-size: 3px 3px;
-	background-repeat: repeat-x;
-	background-position-y: center;
- */
-	text-align: center;
+h1, h2, h3, h4, h5, h6 {
+	font-family: Raleway;
+	font-weight: 300;
 	margin-bottom: $grid-gutter-width;
-	position: relative;
-	
+}
+
+.oe-carat {
 	&::before{
-		position: absolute;
-		left: -($grid-gutter-width);
+		margin-right: $grid-gutter-width / 2;
 		content:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24px' height='24px' fill='#369'><path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /></svg>");
-/* 		margin-right: ; */
 	}
-	&::after{
-		position: absolute;
-		right: -($grid-gutter-width);
-		content:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24px' height='24px' fill='#369'><path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /></svg>");
-/* 		margin-left: ($grid-gutter-width / 2); */
-	}
-	
-/* 
-	span {
-		background: white;
-		padding-left: $grid-gutter-width / 2;
-		padding-right: $grid-gutter-width / 2;
-		display: inline-block;
-	}
- */
 }
 
 .hero {
